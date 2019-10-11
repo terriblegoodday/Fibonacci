@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		77570BB2235146E300B16CD6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77570BB1235146E300B16CD6 /* main.cpp */; };
+		77570BBA2351479C00B16CD6 /* fiblib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77570BB82351479C00B16CD6 /* fiblib.cpp */; };
+		77570BDE23514A6A00B16CD6 /* Fibonacci_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77570BDD23514A6A00B16CD6 /* Fibonacci_Tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +27,22 @@
 /* Begin PBXFileReference section */
 		77570BAE235146E300B16CD6 /* Fibonacci */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Fibonacci; sourceTree = BUILT_PRODUCTS_DIR; };
 		77570BB1235146E300B16CD6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		77570BB82351479C00B16CD6 /* fiblib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fiblib.cpp; sourceTree = "<group>"; };
+		77570BB92351479C00B16CD6 /* fiblib.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = fiblib.hpp; sourceTree = "<group>"; };
+		77570BDB23514A6A00B16CD6 /* Fibonacci Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fibonacci Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77570BDD23514A6A00B16CD6 /* Fibonacci_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fibonacci_Tests.m; sourceTree = "<group>"; };
+		77570BDF23514A6A00B16CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		77570BAB235146E300B16CD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77570BD823514A6A00B16CD6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				77570BB0235146E300B16CD6 /* Fibonacci */,
+				77570BDC23514A6A00B16CD6 /* Fibonacci Tests */,
 				77570BAF235146E300B16CD6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				77570BAE235146E300B16CD6 /* Fibonacci */,
+				77570BDB23514A6A00B16CD6 /* Fibonacci Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +74,19 @@
 			isa = PBXGroup;
 			children = (
 				77570BB1235146E300B16CD6 /* main.cpp */,
+				77570BB82351479C00B16CD6 /* fiblib.cpp */,
+				77570BB92351479C00B16CD6 /* fiblib.hpp */,
 			);
 			path = Fibonacci;
+			sourceTree = "<group>";
+		};
+		77570BDC23514A6A00B16CD6 /* Fibonacci Tests */ = {
+			isa = PBXGroup;
+			children = (
+				77570BDD23514A6A00B16CD6 /* Fibonacci_Tests.m */,
+				77570BDF23514A6A00B16CD6 /* Info.plist */,
+			);
+			path = "Fibonacci Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,16 +109,38 @@
 			productReference = 77570BAE235146E300B16CD6 /* Fibonacci */;
 			productType = "com.apple.product-type.tool";
 		};
+		77570BDA23514A6A00B16CD6 /* Fibonacci Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77570BE023514A6A00B16CD6 /* Build configuration list for PBXNativeTarget "Fibonacci Tests" */;
+			buildPhases = (
+				77570BD723514A6A00B16CD6 /* Sources */,
+				77570BD823514A6A00B16CD6 /* Frameworks */,
+				77570BD923514A6A00B16CD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fibonacci Tests";
+			productName = "Fibonacci Tests";
+			productReference = 77570BDB23514A6A00B16CD6 /* Fibonacci Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		77570BA6235146E300B16CD6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Eduard Dzhumagaliev";
 				TargetAttributes = {
 					77570BAD235146E300B16CD6 = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+					};
+					77570BDA23514A6A00B16CD6 = {
 						CreatedOnToolsVersion = 10.3;
 					};
 				};
@@ -109,9 +158,20 @@
 			projectRoot = "";
 			targets = (
 				77570BAD235146E300B16CD6 /* Fibonacci */,
+				77570BDA23514A6A00B16CD6 /* Fibonacci Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77570BD923514A6A00B16CD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		77570BAA235146E300B16CD6 /* Sources */ = {
@@ -119,6 +179,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				77570BB2235146E300B16CD6 /* main.cpp in Sources */,
+				77570BBA2351479C00B16CD6 /* fiblib.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77570BD723514A6A00B16CD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77570BDE23514A6A00B16CD6 /* Fibonacci_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,17 +308,68 @@
 		77570BB6235146E300B16CD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HA8PQ78LFS;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Fibonacci/Fibonacci-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		77570BB7235146E300B16CD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HA8PQ78LFS;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Fibonacci/Fibonacci-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		77570BE123514A6A00B16CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HA8PQ78LFS;
+				INFOPLIST_FILE = "Fibonacci Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "terriblegoodday.Fibonacci-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		77570BE223514A6A00B16CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HA8PQ78LFS;
+				INFOPLIST_FILE = "Fibonacci Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "terriblegoodday.Fibonacci-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -271,6 +391,15 @@
 			buildConfigurations = (
 				77570BB6235146E300B16CD6 /* Debug */,
 				77570BB7235146E300B16CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77570BE023514A6A00B16CD6 /* Build configuration list for PBXNativeTarget "Fibonacci Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77570BE123514A6A00B16CD6 /* Debug */,
+				77570BE223514A6A00B16CD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
