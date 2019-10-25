@@ -7,7 +7,7 @@
 		<key>Fibonacci Tests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<key>Fibonacci Unit Tests.xcscheme_^#shared#^_</key>
 		<dict>
@@ -23,6 +23,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>77570BAD235146E300B16CD6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>77570BDA23514A6A00B16CD6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

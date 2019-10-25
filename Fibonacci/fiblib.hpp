@@ -10,8 +10,13 @@
 #define fiblib_hpp
 
 #include <stdio.h>
+#include <string>
 #include "fiblib.hpp"
 
+using namespace std;
+
+
+string x(int h);
 int fib(int n);
 
 #endif /* fiblib_hpp */

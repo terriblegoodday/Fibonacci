@@ -15,7 +15,7 @@ int main(int argc, const char * argv[]) {
     int n;
     cin >> n;
     if (n >= 0) {
-        cout << fib(n) << std::endl;
+        cout << fib(n) << endl;
     }
-    return 0;
+    printf("%x", 0b101);
 }

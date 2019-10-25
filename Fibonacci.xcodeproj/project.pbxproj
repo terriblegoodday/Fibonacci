@@ -10,6 +10,8 @@
 		77570BB2235146E300B16CD6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77570BB1235146E300B16CD6 /* main.cpp */; };
 		77570BBA2351479C00B16CD6 /* fiblib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77570BB82351479C00B16CD6 /* fiblib.cpp */; };
 		77570BDE23514A6A00B16CD6 /* Fibonacci_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77570BDD23514A6A00B16CD6 /* Fibonacci_Tests.m */; };
+		7763BD3B2351545700EAE8F5 /* fiblib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77570BB82351479C00B16CD6 /* fiblib.cpp */; };
+		77BA39192363B40D005F7A52 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77570BB1235146E300B16CD6 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,7 +32,7 @@
 		77570BB82351479C00B16CD6 /* fiblib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fiblib.cpp; sourceTree = "<group>"; };
 		77570BB92351479C00B16CD6 /* fiblib.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = fiblib.hpp; sourceTree = "<group>"; };
 		77570BDB23514A6A00B16CD6 /* Fibonacci Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fibonacci Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		77570BDD23514A6A00B16CD6 /* Fibonacci_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fibonacci_Tests.m; sourceTree = "<group>"; };
+		77570BDD23514A6A00B16CD6 /* Fibonacci_Tests.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = Fibonacci_Tests.m; sourceTree = "<group>"; };
 		77570BDF23514A6A00B16CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,6 +190,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				77570BDE23514A6A00B16CD6 /* Fibonacci_Tests.m in Sources */,
+				7763BD3B2351545700EAE8F5 /* fiblib.cpp in Sources */,
+				77BA39192363B40D005F7A52 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +356,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = "terriblegoodday.Fibonacci-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -369,6 +374,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = "terriblegoodday.Fibonacci-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

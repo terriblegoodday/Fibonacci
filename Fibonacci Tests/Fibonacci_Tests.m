@@ -7,7 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "fiblib.hpp"
+
+#include "fiblib.hpp"
 
 @interface Fibonacci_Tests : XCTestCase
 
@@ -24,7 +25,11 @@
 }
 
 - (void)testExample {
-    XCTAssert(fib)
+    XCTAssert(fib(0) == 0);
+    XCTAssert(fib(1) == 1);
+    XCTAssert(fib(2) == 1);
+    XCTAssert(fib(3) == 2);
+    XCTAssert(fib(4) == 3);
 }
 
 - (void)testPerformanceExample {
