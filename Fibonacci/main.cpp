@@ -18,4 +18,6 @@ int main(int argc, const char * argv[]) {
         cout << fib(n) << endl;
     }
     printf("%x", 0b101);
+    
+    return 0;
 }
